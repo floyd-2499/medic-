@@ -28,7 +28,6 @@ export async function getServerSideProps() {
             throw new Error('Error loading data from the API');
         }
     } catch (error) {
-        console.error('Error fetching data:', error);
         return {
             props: {
                 products: null,

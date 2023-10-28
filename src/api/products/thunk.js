@@ -11,7 +11,6 @@ export function fetchProducts() {
             dispatch(setProducts(data))
             dispatch(setStatus(APISTATUS.SUCCESS))
         } catch (err) {
-            console.log(err);
             dispatch(setStatus(APISTATUS.ERROR))
         }
     }

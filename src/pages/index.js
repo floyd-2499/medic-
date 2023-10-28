@@ -7,8 +7,6 @@ export default function Home() {
   const dispatch = useDispatch()
   const { data: products, status } = useSelector((state) => state.products)
 
-  console.log(products, status);
-
   useEffect(() => {
     dispatch(fetchProducts())
   }, [])

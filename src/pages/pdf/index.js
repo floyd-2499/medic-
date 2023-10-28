@@ -60,7 +60,6 @@ const PDFReader = () => {
                 return 'invalid (HTTP Status: ' + response.status + ')';
             }
         } catch (error) {
-            console.error(`Error occurred while checking ${link}: ${error}`);
             return 'invalid (Error)';
         }
     }
@@ -82,8 +81,6 @@ const PDFReader = () => {
         setLoading(false)
         setValidatedData(updatedData);
     }
-
-    console.log(validatedData);
 
     const convertJSONToExcel = () => {
         const workbook = new ExcelJS.Workbook();
