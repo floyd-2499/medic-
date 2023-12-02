@@ -26,8 +26,8 @@ export const ExcelFileUploader = ({ onFileUpload, sheetKey }) => {
         sheet.eachRow((row, rowNumber) => {
             if (rowNumber !== 1) {
                 const rowData = {};
-                row.eachCell((cell, colNumber) => {
-                    rowData[header[colNumber]] = cell.value;
+                row.eachCell({ includeEmpty: true }, (cell, colNumber) => {
+                    rowData[header[colNumber]] = cell?.value !== undefined ? cell.value : null;
                 });
                 jsonData.push(rowData);
             }
