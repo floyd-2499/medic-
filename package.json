@@ -8,9 +8,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "optionalDependencies": {
-    "fsevents": "*"
- },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "classnames": "^2.3.2",
