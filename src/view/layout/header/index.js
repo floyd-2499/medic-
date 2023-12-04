@@ -24,18 +24,21 @@ const Header = () => {
                 <Link href={uris.fieldMapper} className={styles["header-nav"]}>
                     Map-Field
                 </Link>
+                <Link href={uris.fieldCalculations} className={styles["header-nav"]}>
+                    Field-Calculations
+                </Link>
                 <Link href={uris.colorExcel} className={styles["header-nav"]}>
                     EX-Color
-                </Link>
-                <Link href={uris.products} className={styles["header-nav"]}>
-                    Products
                 </Link>
                 <Link href={uris.pdf} className={styles["header-nav"]}>
                     PDF
                 </Link>
-                <Link href={uris.charts} className={styles["header-nav"]}>
+                {/* <Link href={uris.products} className={styles["header-nav"]}>
+                    Products
+                </Link> */}
+                {/* <Link href={uris.charts} className={styles["header-nav"]}>
                     Charts
-                </Link>
+                </Link> */}
                 {/* <div className={cn(styles["nav-icons-section"], styles["nav-container"])}>
                     <Link href={uris.cart} className={cn(styles['header-nav'], styles.cart)}>
                         Cart

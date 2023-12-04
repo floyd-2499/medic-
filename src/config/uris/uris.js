@@ -9,7 +9,8 @@ const uris = {
     multiExcel: '/multi-excel',
     charts: "/charts",
     fieldMapper: "/field",
-    colorExcel: '/color'
+    colorExcel: '/color',
+    fieldCalculations: '/field-calculations',
 }
 
 export default uris
